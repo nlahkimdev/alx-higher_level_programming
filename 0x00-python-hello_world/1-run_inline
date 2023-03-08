@@ -1,2 +1,3 @@
-#!/usr/bin/python3
-python $PYCODE
+#!/usr/bin/bash
+fun=$PYCODE
+python3 fun
