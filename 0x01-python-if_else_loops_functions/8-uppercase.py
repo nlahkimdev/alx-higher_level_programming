@@ -5,5 +5,5 @@ def uppercase(c):
             n = chr(ord(i) - 32)
         else:
             n = i
-        print(n, end='')
-    print("", end='\n')
+        print("{}".format(n), end='')
+    print("".format(), end='\n')
