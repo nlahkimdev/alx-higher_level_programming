@@ -2,4 +2,4 @@
 alpha = ""
 for i in range(97, 123):
     alpha = alpha + chr(i)
-print(alpha)
+print(f"alpha")
