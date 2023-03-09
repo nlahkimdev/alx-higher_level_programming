@@ -8,8 +8,6 @@ if number < 0:
 else:
     last = int(last)
 
-print(f"{number} {last}")
-
 if last == 0:
     result = "and is zero"
 elif last > 5:
