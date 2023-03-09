@@ -6,4 +6,4 @@ def print_last_digit(number):
         result = int(last) * -1
     else:
         result = int(last)
-    print("{:d}".format(result))
+    print("{:d}".format(result), end='')
