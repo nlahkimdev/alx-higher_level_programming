@@ -17,4 +17,4 @@ elif last > 5:
 elif last < 6:
     result = "and is less than 6 and not 0"
 
-print(f"Last digit of {number} is {last} {result}")
+print(f"Last digit of {number:d} is {last:d} {result}")
