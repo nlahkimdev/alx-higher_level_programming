@@ -9,7 +9,7 @@ else:
     last = int(last)
 
 if last == 0:
-    result = "and is zero"
+    result = "and is 0"
 elif last > 5:
     result = "and is greater than 5"
 elif last < 6:
