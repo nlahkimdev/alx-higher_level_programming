@@ -4,15 +4,12 @@ if __name__ == "__main__":
     from calculator_1 import add, sub, mul, div
     ln = len(sys.argv)
     if ln != 4:
-        # handling no arguments
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         sys.exit(1)
     elif ln == 4:
-        # store each argv value to a variable
         a = int(sys.argv[1])
         op = str(sys.argv[2])
         b = int(sys.argv[3])
-        # handle arithmeric operator
         match op:
             case '+':
                 result = add(a, b)
