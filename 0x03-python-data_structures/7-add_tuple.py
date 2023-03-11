@@ -7,8 +7,8 @@ def add_tuple(tuple_a=(), tuple_b=()):
     result = ()
     c = []
     if lna == 0:
-        a.appedn(0)
-        a.appedn(0)
+        a.append(0)
+        a.append(0)
     if lnb == 0:
         b.append(0)
         b.append(0)
