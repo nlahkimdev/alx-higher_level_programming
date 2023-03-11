@@ -1,24 +1,29 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
+    import sys
     from calculator_1 import add, sub, mul, div
-    from sys import argv
-    if argv != 4:
+    ln = len(sys.argv)
+    if ln != 4:
+        # handling no arguments
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
-        exit(1)
-    else:
-        a = int(argv[1])
-        op = argv[2]
-        b = int(argv[3])
-        if op == '+':
-            result = add(a, b)
-        if op == '-':
-            result = sub(a, b)
-        elif op == "*":
-            result = mul(a, b)
-        elif op == "/":
-            result = div(a, b)
-        elif op != '+' and op != '-' and op != '*' and op != '/':
-            print("Unknown operator. Available operators: +, -, * and /")
-            sys.exit(1)
+        sys.exit(1)
+    elif ln == 4:
+        # store each argv value to a variable
+        a = int(sys.argv[1])
+        op = str(sys.argv[2])
+        b = int(sys.argv[3])
+        # handle arithmeric operator
+        match op:
+            case '+':
+                result = add(a, b)
+            case '-':
+                result = sub(a, b)
+            case "*":
+                result = mul(a, b)
+            case '/':
+                result = div(a, b)
+            case default:
+                print("Unknown operator. Available operators: +, -, * and /")
+                sys.exit(1)
         if op == '+' or op == '-' or op == '*' or op == '/':
             print("{} {} {} = {}".format(a, op, b, result))
