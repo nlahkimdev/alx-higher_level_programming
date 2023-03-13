@@ -2,10 +2,11 @@
 def multiple_returns(sentence):
     c = ()
     result = []
-    result.append(len(sentence))
-    if len(sentence) != 0:
+    if sentence:
+        result.append(len(sentence))
         result.append(sentence[0])
-    else:
+    elif not sentence:
+        result.append(0)
         result.append("")
     c = tuple(result)
     return c
