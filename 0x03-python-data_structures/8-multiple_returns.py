@@ -7,6 +7,6 @@ def multiple_returns(sentence):
         result.append(sentence[0])
     elif not sentence:
         result.append(None)
-        result.append("")
+        result.append(0)
     c = tuple(result)
     return c
